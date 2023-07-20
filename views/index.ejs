@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MP3 Merge UI</title>
+</head>
+<body>
+  <h1>Select Number of Files to Merge</h1>
+  <form action="/merge" method="post">
+    <label for="numFiles">Number of Files to Merge:</label>
+    <input type="number" name="numFiles" id="numFiles" min="1" max="<%= inputFiles.length %>" required>
+    <br>
+    <label for="outputFile">Output File Name:</label>
+    <input type="text" name="outputFile" id="outputFile" required>
+    <br>
+    <button type="submit">Merge Files</button>
+  </form>
+</body>
+</html>
